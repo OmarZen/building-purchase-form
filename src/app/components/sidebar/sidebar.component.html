@@ -1,28 +1,26 @@
-<div class="bg-[#3E97FF] h-screen flex flex-col justify-between items-center py-6 px-4 rounded-lg">
+<div class="bg-[#3E97FF] h-screen flex flex-col justify-between items-center py-5 px-2 rounded-lg">
   <!-- Top Section -->
-  <div class="flex flex-col items-center">
-    <fa-icon [icon]="faGlobe" class="text-white text-3xl mb-2"></fa-icon>
-    <hr class="w-10 border-white">
+  <div class="flex flex-col items-center mb-8">
+    <img src="assets/icons/logo.svg" alt="Globe Icon" class="text-white text-4xl mb-2">
+    <hr class="w-12 border-white">
   </div>
 
   <!-- Middle Section -->
   <div class="flex flex-col space-y-6 items-center">
     <!-- Home Icon with background box -->
-    <div class="relative">
-      <div class="absolute inset-0 bg-[#A4CEFF] opacity-63 rounded-lg w-10 h-16"></div>
-      <fa-icon [icon]="faHome" class="text-white text-2xl relative z-10 transition-transform duration-300 ease-in-out transform hover:scale-110"></fa-icon>
+    <div class="relative flex items-center justify-center">
+      <div class="absolute w-12 h-12 bg-[#A4CEFF] opacity-63 rounded-lg"></div>
+      <img src="assets/icons/home.svg" alt="Home Icon" class="text-white text-4xl relative z-10 transition-transform duration-300 ease-in-out transform hover:scale-110">
     </div>
-    <fa-icon [icon]="faPeopleGroup" class="text-white text-2xl transition-transform duration-300 ease-in-out transform hover:scale-110"></fa-icon>
-    <fa-icon [icon]="faBox" class="text-white text-2xl transition-transform duration-300 ease-in-out transform hover:scale-110"></fa-icon>
-    <fa-icon [icon]="faCalendar" class="text-white text-2xl transition-transform duration-300 ease-in-out transform hover:scale-110"></fa-icon>
-
-    <fa-icon [icon]="faMessage" class="text-white text-2xl transition-transform duration-300 ease-in-out transform hover:scale-110"></fa-icon>
+    <img src="assets/icons/box.svg" alt="Box Icon" class="text-white text-4xl transition-transform duration-300 ease-in-out transform hover:scale-110">
+    <img src="assets/icons/calendar.svg" alt="Calendar Icon" class="text-white text-4xl transition-transform duration-300 ease-in-out transform hover:scale-110">
+    <img src="assets/icons/message.svg" alt="Message Icon" class="text-white text-4xl transition-transform duration-300 ease-in-out transform hover:scale-110">
   </div>
 
   <!-- Bottom Section -->
   <div class="flex flex-col items-center">
-    <hr class="w-10 border-white mb-6">
-    <fa-icon [icon]="faCog" class="text-white text-2xl transition-transform duration-300 ease-in-out transform hover:scale-110 mb-2"></fa-icon>
-    <fa-icon [icon]="faInfoCircle" class="text-white text-2xl transition-transform duration-300 ease-in-out transform hover:scale-110"></fa-icon>
+    <hr class="w-12 border-white mb-6">
+    <img src="assets/icons/setting.svg" alt="Settings Icon" class="text-white text-4xl transition-transform duration-300 ease-in-out transform hover:scale-110 mb-6">
+    <img src="assets/icons/info.svg" alt="Info Icon" class="text-white text-4xl transition-transform duration-300 ease-in-out transform hover:scale-110">
   </div>
 </div>

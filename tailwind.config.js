@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{html,ts,css}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'neo-sans': ['"Neo Sans Arabic"', 'sans-serif'], // Register your custom font
+      },
+    },
   },
   plugins: [],
 }

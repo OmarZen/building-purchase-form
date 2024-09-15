@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Import Neo Sans Arabic Font */
+@font-face {
+  font-family: 'Neo Sans Arabic';
+  src: url('/assets/fonts/NeoSansArabic-Regular.ttf') format('truetype'),
+    url('/assets/fonts/NeoSansArabic-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neo Sans Arabic';
+  src: url('/assets/fonts/NeoSansArabic-Medium') format('truetype');
+  font-weight: 500;
+  /* Medium */
+  font-style: normal;
+}
+
+/* Apply the font globally */
+body {
+  font-family: 'Neo Sans Arabic', sans-serif;
+
+}
