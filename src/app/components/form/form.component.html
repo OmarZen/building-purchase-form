@@ -1,19 +1,83 @@
-<div class="form-container">
-  <h2 class="text-2xl mb-4 text-right">عنوان النموذج</h2>
-  <p class="text-right">وصف النموذج يذهب هنا.</p>
-
-  <div class="form-group mb-4 text-right">
-    <label for="field1" class="block">حقل 1</label>
-    <input id="field1" type="text" class="border rounded w-full p-2 text-right">
+<div class="form-container flex flex-col items-end p-6 bg-white shadow-md rounded-lg flex-1">
+  <!-- Center the title and icon -->
+  <div class="flex justify-center items-center mb-6 w-full">
+    <h2 class="text-3xl font-bold text-center">بناء نموذج الاحتمالية</h2>
+    <img src="assets/icons/note.svg" alt="Form" class="w-12 h-12 ml-2">
   </div>
 
-  <div class="form-group mb-4 text-right">
-    <label for="field2" class="block">حقل 2</label>
-    <input id="field2" type="text" class="border rounded w-full p-2 text-right">
+  <!-- Form Steps and Description -->
+  <div class="flex flex-col items-end">
+    <div class="flex flex-row items-center mb-2">
+      <p class="text-right font-bold text-lg text-[#343558]">إضافة الرأس و الشعار</p>
+      <div class="bg-[#278BFF] rounded-full text-white ml-2">
+        <span class="p-2">1</span>
+      </div>
+    </div>
+    <p class="text-sm mb-4 text-[#83899F] text-end">إبدا بإختيار البيانات التى تريد ان تضيفها إلى النموذج ان تضيفها إلى
+      النموذج ان تضيفها إلى النموذج</p>
   </div>
 
-  <div class="flex justify-end space-x-2">
+  <!-- Form Fields -->
+  <div class="form-group mb-4 flex flex-col text-right w-full">
+    <label for="field1" class="block font-regular mb-2">عنوان النموذج</label>
+    <div class="flex flex-row gap-3 items-center">
+      <div class="icon-container bg-white border-[#E0E3E9] border p-2 rounded-lg">
+        <img src="assets/icons/eye-gray.svg" alt="Info" class="eye-icon w-6 h-6">
+      </div>
+      <input placeholder="يمكنك كتابة عنوان المبادرة من هنا" id="field1" type="text"
+        class="border rounded w-full p-2 text-right">
+    </div>
+  </div>
+
+  <div class="form-group flex flex-col mb-4 text-right w-full">
+    <label for="field2" class="block font-regular mb-2">وصف النموذج</label>
+    <div class="flex flex-row gap-3 items-center">
+      <div class="icon-container bg-white border-[#E0E3E9] border p-2 rounded-lg">
+        <img src="assets/icons/eye-gray.svg" alt="Info" class="eye-icon w-6 h-6">
+      </div>
+      <textarea type="text" placeholder="يمكنك كتابة وصف المبادرة هنا" cols="40" rows="2" id="field2"
+        class="border rounded w-full p-2 text-right"></textarea>
+    </div>
+  </div>
+
+  <div class="form-group flex flex-col mb-4 text-right w-full">
+    <label for="field2" class="block font-regular mb-2">شعار الشركة</label>
+    <div class="flex flex-row gap-3 items-center">
+      <div class="icon-container bg-white border-[#E0E3E9] border p-2 rounded-lg">
+        <img src="assets/icons/eye-gray.svg" alt="Info" class="eye-icon w-6 h-6">
+      </div>
+      <div
+        class="dashed-container flex flex-row items-center justify-between gap-2 w-full border-dashed border-2 border-[#E0E3E9] p-3 rounded">
+        <label for="file-upload" class="text-gray-500 cursor-pointer flex items-center gap-2">
+          <img src="assets/icons/add-photo-gray.svg" alt="Upload Icon" class="w-5 h-5">
+          قم برفع لوجو شركتك
+        </label>
+        <input id="file-upload" type="file" class="hidden">
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group flex flex-col mb-4 text-right w-full">
+    <label for="field2" class="block font-regular mb-2">صورة غلاف النموذج</label>
+    <div class="flex flex-row gap-3 items-center">
+      <div class="icon-container bg-white border-[#E0E3E9] border p-2 rounded-lg">
+        <img src="assets/icons/eye-gray.svg" alt="Info" class="eye-icon w-6 h-6">
+      </div>
+      <div
+        class="dashed-container flex flex-row items-center justify-between gap-2 w-full border-dashed border-2 border-[#E0E3E9] p-3 rounded">
+        <label for="file-upload" class="text-gray-500 cursor-pointer flex items-center gap-2">
+          <img src="assets/icons/add-photo-gray.svg" alt="Upload Icon" class="w-5 h-5">
+          قم برفع صورة
+        </label>
+        <input id="file-upload" type="file" class="hidden">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Buttons -->
+  <div class="flex space-x-2">
     <button class="bg-blue-500 text-white px-4 py-2 rounded">التالي</button>
-    <button class="bg-gray-500 text-white px-4 py-2 rounded">رجوع</button>
+    <button class="bg-white text-black px-4 py-2 rounded font-bold ">></button>
   </div>
 </div>

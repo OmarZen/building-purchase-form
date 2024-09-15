@@ -1,0 +1,11 @@
+/* Hover effect to change eye icon and background color */
+.icon-container:hover {
+  /* make background 3E97FF with opacity 10% */
+  background-color: rgba(62, 151, 255, 0.1);
+  /* make borders blue */
+  border: none;
+}
+
+.icon-container:hover .eye-icon {
+  content: url('../../../assets/icons/eye-blue.svg'); /* Replace eye-gray with eye-red on hover */
+}
