@@ -1,32 +1,48 @@
-<div class="header flex justify-between items-center h-16 border-b p-4 bg-white shadow-sm">
-  <div class="flex ">
+<div class="header flex justify-between h-16 items-center border-b p-4 bg-white drop-shadow-md rounded-lg">
+  <div class="flex">
     <!-- Profile Section (Right) -->
-  <div class="profile flex items-center space-x-4">
-    <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full object-cover">
-    <span class="font-medium">اسم المستخدم</span>
-  </div>
+    <div class="profile flex flex-col items-start space-y-1">
+      <div class="flex items-center space-x-4">
+        <img src="assets/icons/arrow-down.svg" alt="Arrow" class="w-3 h-3">
+        <div class="flex flex-col items-end">
+          <span class="font-medium">هيثم أبو العز</span>
+          <span class="text-[#92A1AD] text-xs">خدمة العملاء</span>
+        </div>
 
-  <!-- Actions Section (Left) -->
-  <div class="actions flex space-x-6">
-    <span class="flex items-center space-x-2 cursor-pointer">
-      <img src="assets/icons/search.svg" alt="Search" class="w-5 h-5">
-      <span>بحث</span>
-    </span>
-    <span class="flex items-center space-x-2 cursor-pointer">
-      <img src="assets/icons/notification.svg" alt="Notifications" class="w-5 h-5">
-      <span>إشعارات</span>
-    </span>
-    <span class="flex items-center space-x-2 cursor-pointer">
-      <img src="assets/icons/message.svg" alt="Messages" class="w-5 h-5">
-      <span>رسائل</span>
-    </span>
-  </div>
+        <img src="assets/images/profile.png" alt="User" class="w-10 h-10 rounded-lg object-cover">
+      </div>
+
+    </div>
+
+    <!-- Vertical Divider (Gray) -->
+    <div class="mx-5 flex items-center">
+      <hr class="w-0.5 h-10 bg-[#EEEFF3]">
+    </div>
+
+    <!-- Actions Section (Left) -->
+    <div class="actions flex space-x-6">
+      <div class="bg-white border-[#E0E3E9] border p-2 rounded-lg">
+        <img src="assets/icons/sms.svg" alt="Messages" class="w-5 h-5">
+      </div>
+      <div class="relative bg-white border-[#E0E3E9] border p-2 rounded-lg">
+        <img src="assets/icons/notification.svg" alt="Notifications" class="w-5 h-5">
+        <!-- Red notification badge -->
+        <div class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-red-500 rounded-full"></div>
+      </div>
+      <div class="bg-white border-[#E0E3E9] border p-2 rounded-lg">
+        <img src="assets/icons/search.svg" alt="Search" class="w-5 h-5">
+      </div>
+    </div>
   </div>
 
   <!-- Path text of the website -->
-  <div class="path">
-    <span>الرئيسية</span>
-    <span> > </span>
-    <span>المستخدمين</span>
+  <div class="path flex space-x-2">
+    <!-- Second part of the path with black text -->
+    <span class="text-black font-medium text-sm">فريق البرمجة</span>
+    <span class="text-black font-medium"><</span>
+    <!-- First part of the path with color #83899F -->
+    <span class="text-[#83899F] font-medium text-sm">لوحة تحكم المهام</span>
+    <span class="text-[#83899F] font-medium"><</span>
+    <span class="text-[#83899F] font-medium text-sm">اي تكنولوجي</span>
   </div>
 </div>

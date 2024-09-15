@@ -1,10 +1,12 @@
 <div class="app-container flex flex-row-reverse h-screen m-4">
   <app-sidebar></app-sidebar>
-  <div class="main-content flex flex-col flex-1 p-5">
+  <div class="main-content flex flex-col flex-1 pr-5">
     <app-header></app-header>
-    <app-stepper></app-stepper>
-    <div class="form-preview-container flex flex-1 mt-10 ">
-      <app-preview></app-preview>
+    <div class="form-preview-stepper-container flex flex-row justify-end">
+      <div class="flex flex-col">
+        <app-stepper></app-stepper>
+        <app-preview></app-preview>
+      </div>
       <app-form></app-form>
     </div>
   </div>
